@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de Captação de Chuva</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="style.css" />
+    <h1>Calculadora de Captação de Chuva</h1>
+
+    <div class="sheet">
+      <label for="area">Área do telhado (m²):</label>
+      <input type="number" id="area" />
+      <br />
+      <label for="precipitacaoAnual">Precipitação média anual (mm):</label>
+      <input type="number" id="precipitacaoAnual" />
+      <br />
+      <button onclick="calcularVolume()">Calcular</button>
+    </div>
+
+    <h2 id="resultado"></h2>
+    <script src="script.js"></script>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Região</th>
+            <th>Precipitação Média Anual (mm)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sudeste</td>
+            <td>1500</td>
+          </tr>
+          <tr>
+            <td>Sul</td>
+            <td>1500</td>
+          </tr>
+          <tr>
+            <td>Centro-Oeste</td>
+            <td>1200</td>
+          </tr>
+          <tr>
+            <td>Nordeste</td>
+            <td>600</td>
+          </tr>
+          <tr>
+            <td>Norte</td>
+            <td>2500</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">
+              <em
+                >*Valores médios de referência. Para resultados mais precisos,
+                consultar fontes de referência.</em
+              >
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
